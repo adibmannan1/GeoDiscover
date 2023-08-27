@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.list{
+    list-style-type: none;
+}
+.user-item__content{
+    /* max-width: 300px; */
+    display: inline-block;
+}
+.user-item__content__child{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+.user-item__info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
