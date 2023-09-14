@@ -10,7 +10,7 @@ const UsersList = props => {
       <div className="center">
         <Card>
           <h2>No users found.</h2>
-        </Card> 
+        </Card>
       </div>
     );
   }
