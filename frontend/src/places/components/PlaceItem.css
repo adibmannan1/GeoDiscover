@@ -40,28 +40,7 @@
   font-weight: 600;
   cursor: pointer;
 }
-.place-item .view{
-  background-color: rgb(27, 173, 100);
-  color: rgb(4, 69, 37);
-}
-.place-item .edit{
-  background-color: rgb(154, 154, 154);
-  color: rgb(255, 255, 255);
-}
-.place-item .delete{
-  background-color: rgb(224, 22, 49);
-  color: rgb(255, 255, 255);
-}
-.place-item .view:hover{
-  background-color: rgb(16, 143, 79);
-}
-.place-item .edit:hover{
-  background-color: rgb(102, 102, 102);
 
-}
-.place-item .delete:hover{
-  background-color: rgb(163, 6, 27);
-}
 
 @media (min-width: 768px) {
   .place-item__image {

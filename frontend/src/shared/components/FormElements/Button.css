@@ -1,0 +1,56 @@
+.button {
+  font: inherit;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(154, 154, 154);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover,
+.button:active {
+  background-color: rgb(102, 102, 102);
+}
+
+.button--inverse {
+  background-color: rgb(27, 173, 100);
+  color: rgb(4, 69, 37);
+}
+
+.button--inverse:hover,
+.button--inverse:active {
+  background-color: rgb(16, 143, 79);
+}
+
+.button--danger {
+  background-color: rgb(224, 22, 49);
+  color: rgb(255, 255, 255);
+}
+
+.button--danger:hover,
+.button--danger:active {
+  background-color: rgb(163, 6, 27);
+}
+
+.button:disabled,
+.button:hover:disabled,
+.button:active:disabled {
+  background: #ccc;
+  color: #979797;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+
+.button--small {
+  font-size: 0.8rem;
+}
+
+.button--big {
+  font-size: 1.5rem;
+}
