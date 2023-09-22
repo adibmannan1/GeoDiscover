@@ -1,11 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
+import Modal from '../../shared/components/UIElements/Modal';
 
 import Card from '../../shared/components/UIElements/Card';
 import Button from '../../shared/components/FormElements/Button';
 import './PlaceItem.css';
 
 const PlaceItem = props => {
+  const [showMap, setShowMap] = useState(false);
+  const openMapHandler = () => setShowMap(true)
+  const closeMapHandler = () => setShowMap(false)
+
   return (
+    <>
+    <Modal 
+      show={showMap} 
+      header={props.address} 
+      onCancel={closeMapHandler}
+      contentClass="place-item__modal-content"
+      footerClass="place-item__modal-actions"
+      footer={<Button onClick={closeMapHandler}>Close</Button>}>
+      <div className='map-container'>View Map</div>
+    </Modal>
     <li className="place-item">
       <Card className="place-item__content">
         <div className="place-item__image">
@@ -20,11 +35,12 @@ const PlaceItem = props => {
           <p>{props.description}</p>
         </div>
         <div className="place-item__actions">
-          <Button inverse>VIEW ON MAP</Button>
+          <Button onClick={openMapHandler} inverse>VIEW ON MAP</Button>
           <Button danger>DELETE</Button>
         </div>
       </Card>
     </li>
+    </>
   );
 };
 
